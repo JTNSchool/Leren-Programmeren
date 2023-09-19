@@ -25,3 +25,4 @@ else:
     tijd = 45
     kosten = (personen * toegang) + (tijd / 5 * VIPVR * personen)
     print(f"Dit geweldige dagje-uit met {personen} mensen in de Speelhal met {tijd} minuten VR kost je maar {kosten} euro")
+
