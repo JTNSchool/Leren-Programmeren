@@ -32,3 +32,5 @@ if a > b:
 elif b > a:
     Min = a
     print(f"A is het kleinste getal: {Min}")
+else:
+    print("a en b zijn even groot")
