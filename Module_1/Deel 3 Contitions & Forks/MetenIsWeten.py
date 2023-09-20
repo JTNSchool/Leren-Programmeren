@@ -28,9 +28,15 @@ b = int(input("Vul een getal in: "))
 
 if a > b:
     Max = a
+    Min = b
     print(f"A is het grootste getal: {Max}")
 elif b > a:
     Min = a
+    Max = b
     print(f"A is het kleinste getal: {Min}")
 else:
     print("a en b zijn even groot")
+    Min = a
+    Max = a
+print(f"Het minimum is: {Min}")
+print(f"Het maximum is: {Max}")
