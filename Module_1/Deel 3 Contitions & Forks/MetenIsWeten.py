@@ -25,3 +25,10 @@
 
 a = int(input("Vul een getal in: "))
 b = int(input("Vul een getal in: "))
+
+if a > b:
+    Max = a
+    print(f"A is het grootste getal: {Max}")
+elif b > a:
+    Min = a
+    print(f"A is het kleinste getal: {Min}")
