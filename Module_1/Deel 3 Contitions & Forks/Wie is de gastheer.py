@@ -12,7 +12,7 @@
 
 gastheer = input("Wie is de gastheer? ").lower()
 allowed = ["jacco", "bouman", "wilfred"]
-gasten = False
+gasten = True
 drank = True
 chips = False
 

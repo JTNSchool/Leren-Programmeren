@@ -19,7 +19,7 @@ gasten = False
 drank = True
 chips = False
 
-if (gasten == True or gastheer == True) and ((gastheer == True and drank == True) or (gasten == True and chips == True and drank == True)):
+if (gasten or gastheer) and ((gastheer and drank) or (gasten and chips and drank)):
     print('Start the Party')
 else:
     print('No Party')
