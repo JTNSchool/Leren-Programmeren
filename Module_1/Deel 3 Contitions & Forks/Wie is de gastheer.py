@@ -11,12 +11,13 @@
 # Commit en push je programma naar github en lever een screenshot van je code in.
 
 gastheer = input("Wie is de gastheer? ").lower()
-allowed = ["jacco", "bouman", "wilfred"]
+allowed = ["jacco"]
+blacklist = ["bouman", "wilfred"]
 gasten = True
 drank = True
 chips = False
 
-if (gasten == True or gastheer in allowed) and ((gastheer in allowed and drank == True) or (gasten == True and chips == True and drank == True)):
+if ((gasten or gastheer in allowed) and ((gastheer in allowed and drank ) or (gasten and chips and drank ))) and gastheer not in blacklist:
     print('Start the Party')
 else:
     print('No Party')
