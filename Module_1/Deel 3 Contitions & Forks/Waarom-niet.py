@@ -21,18 +21,16 @@ else:
     ondernemer_tijd = 0
     ondernemer_aantal = 0
 geslacht = input(colored("bent u een man? ", "yellow")).lower()
-if geslacht in Jalist:
+if geslacht == "man":
     Heeftsnor = input(colored("Heeft u een snor? ", "yellow"))
     if Heeftsnor in Jalist:
         SnorLengte = checkint(input(colored("Hoelang is uw snor? ", "yellow")))
-    else:
-        SnorLengte = 0
-else:
+elif geslacht == "vrouw":
     Heeftroodhaar = input(colored("Heeft u rood haar? ", "yellow")).lower()
     if Heeftroodhaar in Jalist:
         haarlengte = checkint(input(colored("hoelang is uw haar? ", "yellow")))
-    else:
-        glimlach = checkint(input(colored("hoe groot is uw glimlach? ", "yellow")))
+else:
+    glimlach = checkint(input(colored("hoe groot is uw glimlach? ", "yellow")))
 rijbewijs = input(colored("Heeft u een vrachtwagen rijbewijs? ", "yellow")).lower()
 hoed = input(colored("Heeft u een Hoge hoed? ", "yellow")).lower()
 gewicht = checkint(input(colored("Hoe zwaar bent u in kg? ", "yellow")))
@@ -51,10 +49,12 @@ if (diploma not in Jalist) and (ondernemer not in Jalist) or (ondernemer_tijd < 
         afgewezenlijst.append("U heeft geen diploma of u bent geen werknemer.")
     if (ondernemer in Jalist) and (ondernemer_tijd < 3):
         afgewezenlijst.append("U heeft minder dan 3 jaar ervaring als ondernemer.")
-    if (geslacht in Jalist) and (SnorLengte < 10):
+    if (geslacht == "man") and (SnorLengte < 10):
         afgewezenlijst.append("U heeft een tekleine snor.")
-    if (geslacht not in Jalist) and ((haarlengte < 20) or glimlach < 10):
-        afgewezenlijst.append("U heeft te kort haar en een tekleine glimlach.")
+    if (geslacht == "vrouw") and ((haarlengte < 20) ):
+        afgewezenlijst.append("U heeft te kort haar.")
+    if (geslacht != "vrouw" or geslacht != "man") and glimlach < 10:
+        print("Tekleine glimlach")
     if (ondernemer in Jalist) and (ondernemer_aantal < 5):
         afgewezenlijst.append("U heeft minder dan 5 werknemers in dienst.")
     aangenomenpunten += 1
@@ -71,7 +71,13 @@ if (gewicht < 90 or gewicht > 120):
 if lengte < 150 or lengte > 220:
     afgewezenlijst.append("U bent te klein of te groot.")
     aangenomenpunten += 1
-if (ervaring1 < 4 or ervaring2 < 5 or ervaring3 < 3):
+if (ervaring1 < 4):
+    afgewezenlijst.append("U heeft te weinig ervaring.")
+    aangenomenpunten += 1
+elif ervaring2 < 5:
+    afgewezenlijst.append("U heeft te weinig ervaring.")
+    aangenomenpunten += 1
+elif (ervaring3 < 3):
     afgewezenlijst.append("U heeft te weinig ervaring.")
     aangenomenpunten += 1
 

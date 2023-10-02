@@ -15,7 +15,7 @@ allowed = ["jacco"]
 blacklist = ["bouman", "wilfred"]
 gasten = True
 drank = True
-chips = False
+chips = True
 
 if ((gasten or gastheer in allowed) and ((gastheer in allowed and drank ) or (gasten and chips and drank ))) and gastheer not in blacklist:
     print('Start the Party')

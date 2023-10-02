@@ -3,9 +3,8 @@ def JAofNEE(vraag):
     if antwoord in ["ja", "nee", "j", "n"]:
         return antwoord
     else:
-        print("Beantwoord met Ja of Nee")
+        print("Error dus NEE")
         print()
-        JAofNEE(vraag)
 
 
 if JAofNEE("Is de kaas geel?") == "ja":
