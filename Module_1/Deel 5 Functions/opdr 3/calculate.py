@@ -12,27 +12,28 @@ result2 = multiply(nr3, 7)
 test('example', result1, result2)
 
 result1 = nr1 + nr2
-result2 = None
+result2 = add(nr1, nr2)
 test('add', result1,result2)
 
 result1 = (nr1 + nr2) * nr3
-result2 = None
+result2 = multiply(add(nr1, nr2), nr3)
 test('expression-1',result1, result2)
 
 result1 = nr4 / (nr3 - nr2)
-result2 = None
+result2 = divide(nr4, (substract(nr3, nr2)))
 test('expression-2',result1, result2)
 
 result1 = (nr1 * (nr4 - nr3)) / (nr2 + nr3)
-result2 = None
+result2 = multiply(nr1, divide(substract(nr4, nr3), add(nr2, nr3)))
 test('expression-3', result1, result2)
 
 result1 = (nr4 - (nr1 * (nr4 - nr3)) / (nr2 + nr3)) 
-result2 = None
+result2 = substract(nr4, divide(multiply(nr1, substract(nr4, nr3)), add(nr2, nr3)))
 test('expression-4', result1, result2)
 
+# result1 = ((nr4 - (nr1 * (nr4 - nr3)) / (nr2 + nr3)) * 23) - 1
 result1 = ((nr4 - (nr1 * (nr4 - nr3)) / (nr2 + nr3)) * 23) - 1
-result2 = None
+result2 = decrement( (multiply((substract(nr4, (divide( (multiply(nr1, (substract(nr4, nr3)))), add(nr2, nr3))))), 23)) )
 test('expression-5', result1, result2)
 
 report()
