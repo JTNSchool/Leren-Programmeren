@@ -15,6 +15,22 @@ b = 5
 
 verwacht = "Beide getallen zijn even groot"
 resultaat = GetalChecker(a, b)
-test("TEST", verwacht, resultaat)
+test("Gelijk", verwacht, resultaat)
+
+a = 5
+b = 6
+
+verwacht = f"Maximum: {b} en minimum: {a}"
+resultaat = GetalChecker(a, b)
+test("B groter", verwacht, resultaat)
+
+
+a = 6
+b = 5
+
+verwacht = f"Maximum: {a} en minimum: {b}"
+resultaat = GetalChecker(a, b)
+test("A groter", verwacht, resultaat)
+
 
 report()

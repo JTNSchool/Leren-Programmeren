@@ -33,7 +33,7 @@ test('expression-4', result1, result2)
 
 # result1 = ((nr4 - (nr1 * (nr4 - nr3)) / (nr2 + nr3)) * 23) - 1
 result1 = ((nr4 - (nr1 * (nr4 - nr3)) / (nr2 + nr3)) * 23) - 1
-result2 = decrement((multiply((substract(nr4, ())), 23)))
+result2 = decrement( (multiply((substract(nr4, (divide( (multiply(nr1, (substract(nr4, nr3)))), add(nr2, nr3))))), 23)) )
 test('expression-5', result1, result2)
 
 report()
