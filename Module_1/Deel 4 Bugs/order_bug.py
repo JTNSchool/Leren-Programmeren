@@ -15,5 +15,3 @@ if getal_2 == 0:
 else:
     resultaat = deel_getallen(getal_1, getal_2)
     print (f"{getal_1} gedeeld door {getal_2} is gelijk aan {resultaat}")
-
-
