@@ -63,3 +63,39 @@ ant = Round_To_Number5(14.88, AFROND)
 test("2", Expect, ant)
 
 report()
+
+print('''
+      OPDRACHT 3
+      ''')
+
+
+month_discount_brands = ["Vespa", "Kymco", "Yamama"]
+DiscountAmount = 10
+
+def calc_discount(price, brand, month_discount_brands):
+    if brand in month_discount_brands:
+        price = price - (price / 100 * DiscountAmount)
+    return float("{:.2f}".format(price))
+
+
+Expect = 1700 - (1700 / 100 * DiscountAmount)
+ant = calc_discount(1700, "Vespa", month_discount_brands)
+test("3 met korting Vespa", Expect, ant)  
+
+Expect = float(1500)
+ant = calc_discount(1500, "sezuki", month_discount_brands)
+test("3 zonder korting", Expect, ant)
+
+Expect = float(1600 - (1600 / 100 * DiscountAmount))
+ant = calc_discount(1600, "Yamama", month_discount_brands)
+test("3 met korting yamama", Expect, ant)
+
+Expect = float(1500 - (1500 / 100 * DiscountAmount))
+ant = calc_discount(1500, "Kymco", month_discount_brands)
+test("3 met korting kymco", Expect, ant)
+
+Expect = float(1800)
+ant = calc_discount(1800, "wish", month_discount_brands)
+test("3 zonder korting", Expect, ant)
+
+report()
