@@ -34,4 +34,3 @@ print(f"large: {large} * €{prijzen['large']} = €{largeTotaal}")
 print(f"Totaal: {small + medium + large} Pizzas =  €{totaal}")
 print()
 print("--------------------------------------------------")
-
