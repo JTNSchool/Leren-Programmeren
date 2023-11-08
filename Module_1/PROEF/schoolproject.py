@@ -177,7 +177,7 @@ def GoToVraag(number):
         if UserAntwoord in ["2", "b"]:
             GoToVraag(12)
         if UserAntwoord in ["3", "c"]:
-           Screen_Death("Je gaat naar buiten en zoekt de uitgang van het bos.\nNa uren te lopen vries je dood")
+           GoToVraag(10)
 
     elif number == 10:
         vraag = "Je rent door het bos en je krijgt trek."
