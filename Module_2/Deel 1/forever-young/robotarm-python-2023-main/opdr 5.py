@@ -1,5 +1,5 @@
 from RobotArm import RobotArm
-robotArm = RobotArm('exercise 1')
+robotArm = RobotArm('exercise 5')
 robotArm.speed = 3
 robotArm.reportFlaws = False
 # Jouw python instructies zet je vanaf hier:
