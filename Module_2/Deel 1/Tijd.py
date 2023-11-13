@@ -4,4 +4,5 @@ for i in range(1, 25):
         time = "AM"
     else:
         time = "PM"
+        i -= 12
     print(f'{i} {time}')
