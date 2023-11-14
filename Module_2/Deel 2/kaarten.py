@@ -11,12 +11,12 @@ for kleur in kleuren:
 AlleKaarten.append("joker")
 AlleKaarten.append("joker")
 
-AlleKaarten = random.sample(AlleKaarten, 54)
+AlleKaarten = random.sample(AlleKaarten, len(AlleKaarten))
 for i in range(1, 8):
     print(f"Kaart {i}: {AlleKaarten[i]}")
     AlleKaarten.pop(i)
 
-print(f"Deck (47 kaarten): {AlleKaarten}")
+print(f"Deck ({len(AlleKaarten)} kaarten): {AlleKaarten}")
 
 
 
