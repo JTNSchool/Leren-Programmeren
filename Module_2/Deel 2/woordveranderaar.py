@@ -30,4 +30,4 @@ for word in txt:
         a = word
     print(a, end=' ', flush=True)
 
-#Op een blije dag bracht jij met een vlugge tred, een nieuwe accu naar een dorp. Zonder vertraging installeerde je het, bracht licht en vreugde, terwijl het dorp een feest vierde.
+#Op een dag bracht jij met een vlugge tred en een blij gezicht, een nieuwe accu naar een dorp. Zonder vertraging installeerde je het, bracht licht en vreugde, terwijl het dorp een feest vierde.
