@@ -1,5 +1,5 @@
 from RobotArm import RobotArm
-robotArm = RobotArm('exercise 6')
+robotArm = RobotArm('exercise 11')
 robotArm.speed = 3
 robotArm.reportFlaws = False
 # Jouw python instructies zet je vanaf hier:
@@ -10,15 +10,17 @@ robotArm.reportFlaws = False
 #drop()
 #scan()
 #wait()
-robotArm.moveRight()
-for i in range(3):
-    robotArm.grab()
-    robotArm.moveLeft()
-    robotArm.drop()
+for i in range(8):
     robotArm.moveRight()
+
+for i in range(8):
     robotArm.grab()
-    robotArm.moveRight()
-    robotArm.drop()
+    if robotArm.scan() == "white":
+        robotArm.moveRight()
+        robotArm.drop()
+        robotArm.moveLeft()
+    else:
+        robotArm.drop()
     robotArm.moveLeft()
 
 # Na jouw code wachten tot het sluiten van de window:
