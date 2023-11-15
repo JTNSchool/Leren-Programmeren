@@ -1,6 +1,7 @@
 from RobotArm import RobotArm
-robotArm = RobotArm('exercise 6')
-robotArm.speed = 3
+robotArm = RobotArm()
+robotArm.randomLevel(1,7)
+robotArm.speed = 5
 robotArm.reportFlaws = False
 # Jouw python instructies zet je vanaf hier:
 #RobotArm
@@ -10,16 +11,18 @@ robotArm.reportFlaws = False
 #drop()
 #scan()
 #wait()
-robotArm.moveRight()
-for i in range(3):
+count = 1
+while True:
     robotArm.grab()
-    robotArm.moveLeft()
+    if robotArm.scan() == "":
+        break
+    for i in range(count):
+        robotArm.moveRight()
     robotArm.drop()
-    robotArm.moveRight()
-    robotArm.grab()
-    robotArm.moveRight()
-    robotArm.drop()
-    robotArm.moveLeft()
+    for i in range(count):
+        robotArm.moveLeft()
+    count += 1
+
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
