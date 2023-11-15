@@ -1,6 +1,6 @@
 from RobotArm import RobotArm
-robotArm = RobotArm('exercise 6')
-robotArm.speed = 3
+robotArm = RobotArm('exercise 8')
+robotArm.speed = 5
 robotArm.reportFlaws = False
 # Jouw python instructies zet je vanaf hier:
 #RobotArm
@@ -11,15 +11,13 @@ robotArm.reportFlaws = False
 #scan()
 #wait()
 robotArm.moveRight()
-for i in range(3):
+for i in range(7):
     robotArm.grab()
-    robotArm.moveLeft()
+    for i in range(8):
+        robotArm.moveRight()
     robotArm.drop()
-    robotArm.moveRight()
-    robotArm.grab()
-    robotArm.moveRight()
-    robotArm.drop()
-    robotArm.moveLeft()
+    for i in range(8):
+        robotArm.moveLeft()
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
