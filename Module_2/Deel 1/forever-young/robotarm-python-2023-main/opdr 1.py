@@ -3,13 +3,12 @@ robotArm = RobotArm('exercise 1')
 robotArm.speed = 3
 robotArm.reportFlaws = False
 # Jouw python instructies zet je vanaf hier:
-#RobotArm
-#moveRight()
-#moveLeft()
-#grab()
-#drop()
-#scan()
-#wait()
+#RobotArm.moveRight()
+#RobotArm.moveLeft()
+#RobotArm.grab()
+#RobotArm.drop()
+#RobotArm.scan()
+#RobotArm.wait()
 robotArm.moveRight()
 robotArm.grab()
 robotArm.moveLeft()
