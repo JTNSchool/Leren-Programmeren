@@ -12,11 +12,8 @@ AlleKaarten.append("joker")
 AlleKaarten.append("joker")
 
 AlleKaarten = random.sample(AlleKaarten, len(AlleKaarten))
-for i in range(1, 8):
-    print(f"Kaart {i}: {AlleKaarten[i]}")
-    AlleKaarten.pop(i)
+for i in range(7):
+    print(f"Kaart {i}: {AlleKaarten[0]}")
+    AlleKaarten.pop(0)
 
 print(f"Deck ({len(AlleKaarten)} kaarten): {AlleKaarten}")
-
-
-

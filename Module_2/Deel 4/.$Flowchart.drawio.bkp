@@ -1,0 +1,251 @@
+<mxfile host="Electron" modified="2023-11-20T09:17:18.329Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="dI1giaotNHVX2WYGuO2F" version="22.0.3" type="device">
+  <diagram name="Pagina-1" id="RCHgLZHvL-gLIXeU-fye">
+    <mxGraphModel dx="2554" dy="2236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-2" target="GBHZ-rzV9_yCWYzaMx_u-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-2" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-4" target="GBHZ-rzV9_yCWYzaMx_u-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-58" value="Ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-57">
+          <mxGeometry x="0.0566" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-4" value="Wil je nog een ronde spelen?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-150" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-7" target="GBHZ-rzV9_yCWYzaMx_u-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-43" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-41">
+          <mxGeometry x="0.0894" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-7" target="GBHZ-rzV9_yCWYzaMx_u-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-86" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-85">
+          <mxGeometry x="-0.0953" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-7" value="Getal &amp;lt; randomgetal" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="373.75" y="290" width="172.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-11" target="GBHZ-rzV9_yCWYzaMx_u-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-11" value="Raad het getal tussen 1-1000" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="160" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-17" target="GBHZ-rzV9_yCWYzaMx_u-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-33" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-32">
+          <mxGeometry x="0.0971" y="4" relative="1" as="geometry">
+            <mxPoint x="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-17" target="GBHZ-rzV9_yCWYzaMx_u-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-210" y="330" />
+              <mxPoint x="-210" y="-40" />
+              <mxPoint x="105" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-90" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-89">
+          <mxGeometry x="-0.485" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-17" value="Als het verschil tussen het getal en randomgetal kleiner is dan 50" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="290" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-22" value="Zeg&amp;nbsp;Je bent warm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="130" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-25" target="GBHZ-rzV9_yCWYzaMx_u-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-25" value="Zeg&amp;nbsp;Je bent heel warm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="-20" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-27" target="GBHZ-rzV9_yCWYzaMx_u-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-35" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-31">
+          <mxGeometry x="-0.264" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-27" target="GBHZ-rzV9_yCWYzaMx_u-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-37" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-36">
+          <mxGeometry x="0.04" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-27" value="Als het verschil tussen het getal en randomgetal kleiner is dan 20" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="130" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-40" target="GBHZ-rzV9_yCWYzaMx_u-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-40" value="Zeg Hoger" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="290" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-44" target="GBHZ-rzV9_yCWYzaMx_u-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-44" value="Voeg 1 toe aan Fouten" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="-20" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.423;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-22" target="GBHZ-rzV9_yCWYzaMx_u-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-47" target="GBHZ-rzV9_yCWYzaMx_u-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-50" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-48">
+          <mxGeometry x="-0.345" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-47" target="GBHZ-rzV9_yCWYzaMx_u-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-72" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-71">
+          <mxGeometry x="-0.0904" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-47" value="als Fouten &amp;gt;= 10" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="-20" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-51" value="EIND" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="70" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-56" target="GBHZ-rzV9_yCWYzaMx_u-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-56" value="Voeg 1 toe aan Rondes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="546.25" y="-150" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-60" target="GBHZ-rzV9_yCWYzaMx_u-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="-50" />
+              <mxPoint x="439" y="-50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-101" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-99">
+          <mxGeometry x="-0.4679" y="4" relative="1" as="geometry">
+            <mxPoint y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-60" target="GBHZ-rzV9_yCWYzaMx_u-102">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-108" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-107">
+          <mxGeometry x="0.3919" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-60" value="Rondes == 20" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="-150" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-63" target="GBHZ-rzV9_yCWYzaMx_u-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-63" value="Zeg je hebt {rondes} gespeeld met {GoedgeradenPunten}" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="373.75" y="-30" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-73" target="GBHZ-rzV9_yCWYzaMx_u-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-73" value="Genereer getal tussen 1 en 1000" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="160" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-79" target="GBHZ-rzV9_yCWYzaMx_u-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-88" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-87">
+          <mxGeometry x="-0.0133" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-79" value="Als het verschil tussen het getal en randomgetal kleiner is dan 50" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="290" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-80" target="GBHZ-rzV9_yCWYzaMx_u-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-92" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-91">
+          <mxGeometry x="-0.0733" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-80" target="GBHZ-rzV9_yCWYzaMx_u-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-95" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-94">
+          <mxGeometry x="-0.1029" y="-3" relative="1" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-80" value="Als het verschil tussen het getal en randomgetal kleiner is dan 20" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="120" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-81" target="GBHZ-rzV9_yCWYzaMx_u-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="895" y="-220" />
+              <mxPoint x="105" y="-220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-81" value="Zeg&amp;nbsp;Je bent heel warm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="-30" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-83" value="Zeg&amp;nbsp;Je bent warm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="120" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-102" target="GBHZ-rzV9_yCWYzaMx_u-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-104" value="Ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-103">
+          <mxGeometry x="-0.1009" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GBHZ-rzV9_yCWYzaMx_u-102" target="GBHZ-rzV9_yCWYzaMx_u-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-106" value="Nee" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GBHZ-rzV9_yCWYzaMx_u-105">
+          <mxGeometry x="-0.0567" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GBHZ-rzV9_yCWYzaMx_u-102" value="Wil je nog een ronde spelen?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="578.75" y="-25" width="112.5" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
