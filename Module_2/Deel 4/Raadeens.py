@@ -10,6 +10,7 @@ def CreateRandom():
     Fouten = 0
     Rondes += 1
     RandomGetal = random.randint(1, 1000)
+    print(RandomGetal)
     RaadGetal()
 
 
