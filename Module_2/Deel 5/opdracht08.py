@@ -8,5 +8,8 @@ Meloen = [{
 }]
 
 fruitmand = fruitmand + Meloen
+Gewicht = 0
 for fruit in fruitmand:
-    print(fruit["weight"])
+    Gewicht += fruit["weight"]
+
+print(Gewicht)
