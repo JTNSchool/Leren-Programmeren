@@ -38,7 +38,7 @@ Namen = []
 
 Aantal = AantalDeelnemers
 while Aantal > 0:
-    naam = random.choice(NamenRandom) #input("Vul een naam in: ").lower()
+    naam = random.choice(NamenRandom).lower() #input("Vul een naam in: ").lower()
     if naam not in Namen:
         Namen.append(naam)
         Aantal -= 1
@@ -54,12 +54,14 @@ while True:
         if Naam != Lijst[Naam]:
             Score += 1
     if Score == MaxScore:
-        print("FInished", Wrong)
+        print(f"De lijst is gemaakt in {Wrong} Pogingen")
         print(Lijst)
         break
     else:
         Wrong += 1
 
-
-
-
+NaamZien = input("Hoe heet je? ").lower()
+if NaamZien in Lijst:
+    print(f"{NaamZien} jij hebt {Lijst[NaamZien]} getrokken")
+else:
+    print("Dat is geen geldige naam in de Lijst")
