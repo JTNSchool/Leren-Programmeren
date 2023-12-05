@@ -32,13 +32,13 @@ def ShuffleAndGive():
         Personen.pop(0)
 
 
-NamenRandom = ['Alice', 'Bob', 'Charlie', 'David', 'Emma', "Frank", "Grace", "Henry", "Ivy", "Jack"]
-AantalDeelnemers = random.randint(3, 10) #VraagDeelnemers()
+NamenRandom = []
+AantalDeelnemers = VraagDeelnemers()
 Namen = []
 
 Aantal = AantalDeelnemers
 while Aantal > 0:
-    naam = random.choice(NamenRandom).lower() #input("Vul een naam in: ").lower()
+    naam = input("Vul een naam in: ").lower()
     if naam not in Namen:
         Namen.append(naam)
         Aantal -= 1
