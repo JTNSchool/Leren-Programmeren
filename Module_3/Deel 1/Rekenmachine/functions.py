@@ -14,12 +14,13 @@ def division(number1, number2):
 
 def RequestNumber():
     while True:
-        string = input("Vul een getal in: ")
+        antwoord = input("Vul een getal in: ").strip(" ")
+        print(antwoord)
         try:
-            string = float(string)
-            return string
+            antwoord = float(antwoord)
+            return antwoord
         except ValueError:
-            print("Dit is geen getal")
+            print("Dit is geen geldig antwoord")
 
 
 def WhatToDo(choice, uitkomst):
