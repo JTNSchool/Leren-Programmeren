@@ -1,6 +1,6 @@
 import time
 from termcolor import colored
-from data import JOURNEY_IN_DAYS
+from data import JOURNEY_IN_DAYS, COST_FOOD_HORSE_COPPER_PER_DAY, COST_FOOD_HUMAN_COPPER_PER_DAY, COST_HORSE_SILVER_PER_DAY, COST_TENT_GOLD_PER_WEEK
 
 ##################### O03 #####################
 
@@ -32,32 +32,49 @@ def getPersonCashInGold(personCash:dict) -> float:
 ##################### O05 #####################
 
 def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
-    pass
+    cost = copper2gold(JOURNEY_IN_DAYS * ((people * COST_FOOD_HUMAN_COPPER_PER_DAY) + (horses * COST_FOOD_HORSE_COPPER_PER_DAY)))
+    return round(cost, 2)
 
 ##################### O06 #####################
 
 def getFromListByKeyIs(list:list, key:str, value:any) -> list:
-    pass
+    returnList = []
+    for ListLoop in list:
+        if key in ListLoop:
+            if ListLoop[key] == value:
+                returnList.append(ListLoop)
+    print(f"{key}: {returnList}")
+    return returnList
 
 def getAdventuringPeople(people:list) -> list:
-    pass
+    return getFromListByKeyIs(people, "adventuring", True)
 
 def getShareWithFriends(friends:list) -> list:
-    pass
+    return getFromListByKeyIs(friends, "shareWith", True)
 
 def getAdventuringFriends(friends:list) -> list:
-    pass
+    adventuringFriends= getAdventuringPeople(friends)
+    SharingFriends = getShareWithFriends(adventuringFriends)
+    return SharingFriends
 
 ##################### O07 #####################
 
 def getNumberOfHorsesNeeded(people:int) -> int:
-    pass
+    if people % 2 == 0:
+        return int(people / 2)
+    else:
+        return int(people / 2) + 1
 
 def getNumberOfTentsNeeded(people:int) -> int:
-    pass
+    if people % 3 == 0:
+        return int(people / 3)
+    else:
+        return int(people / 3) + 1
 
 def getTotalRentalCost(horses:int, tents:int) -> float:
-    pass
+    HorseCost = silver2gold(horses * COST_HORSE_SILVER_PER_DAY * JOURNEY_IN_DAYS)
+    TentCost = tents * COST_TENT_GOLD_PER_WEEK * int(JOURNEY_IN_DAYS / 7 + 1)
+    return HorseCost + TentCost
 
 ##################### O08 #####################
 
