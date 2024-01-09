@@ -1,6 +1,5 @@
 boodschappen = {}
 
-
 while True:
     boodschap = input("Wat wilt u toevoegen aan uw boodschappenlijst? ").lower()
     if boodschap in boodschappen:

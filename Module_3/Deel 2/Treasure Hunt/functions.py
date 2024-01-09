@@ -100,24 +100,59 @@ def getItemsValueInGold(items:list) -> float:
         amount = item["price"]["amount"] * item["amount"]
         type = item["price"]["type"]
         coins[type] += amount
-
     return getPersonCashInGold(coins)
 
 ##################### O09 #####################
 
 def getCashInGoldFromPeople(people:list) -> float:
-    pass
+    total = 0
+    for person in people:
+        total += getPersonCashInGold(person['cash'])
+    return total
 
 ##################### O10 #####################
 
 def getInterestingInvestors(investors:list) -> list:
-    pass
+    Intrested = []
+    for investor in investors:
+        if investor["profitReturn"] <= 10:
+            Intrested.append(investor)
+    return Intrested
 
 def getAdventuringInvestors(investors:list) -> list:
-    pass
+    Intrested = []
+    for investor in investors:
+        if investor["adventuring"] == True:
+            Intrested.append(investor)
+    return Intrested
 
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
-    pass
+    Cost = {
+        'platinum' : 0,
+        'gold' : 0,
+        'silver' : 0,
+        'copper' : 0
+    }
+
+    #Aantal investors
+    invenstorcount = 0
+    for invenstor in investors:
+        if invenstor['profitReturn'] <= 10 and invenstor['adventuring']:
+            invenstorcount += 1
+
+    #Food
+    Cost['gold'] += getJourneyFoodCostsInGold(invenstorcount, invenstorcount)
+
+    #Gear
+    for item in gear:
+        amount = item["price"]["amount"] * item["amount"]
+        type = item["price"]["type"]
+        Cost[type] += amount * invenstorcount
+
+    #paard en tent
+    Cost['gold'] += getTotalRentalCost(invenstorcount, invenstorcount)
+
+    return getPersonCashInGold(Cost)
 
 ##################### O11 #####################
 
