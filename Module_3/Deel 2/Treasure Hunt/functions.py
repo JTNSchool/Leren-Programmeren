@@ -26,7 +26,6 @@ def getPersonCashInGold(personCash:dict) -> float:
         total += platinum2gold(personCash['platinum'])
     if "gold" in personCash:
         total += personCash['gold']
-
     return round(total, 2)
 
 ##################### O05 #####################
@@ -43,7 +42,6 @@ def getFromListByKeyIs(list:list, key:str, value:any) -> list:
         if key in ListLoop:
             if ListLoop[key] == value:
                 returnList.append(ListLoop)
-    print(f"{key}: {returnList}")
     return returnList
 
 def getAdventuringPeople(people:list) -> list:
@@ -79,10 +77,31 @@ def getTotalRentalCost(horses:int, tents:int) -> float:
 ##################### O08 #####################
 
 def getItemsAsText(items:list) -> str:
-    pass
+    string = ""
+    loop = 0
+    for item in items:
+        loop += 1
+        string = string + f'{item["amount"]}{item["unit"]} {item["name"]}'
+        if len(items)-1 == loop:
+            string = string + " & "
+        elif len(items) != loop:
+            string = string + ", "
+    return string
 
 def getItemsValueInGold(items:list) -> float:
-    pass
+    coins = {
+        'platinum' : 0,
+        'gold' : 0,
+        'silver' : 0,
+        'copper' : 0
+    }
+    
+    for item in items:
+        amount = item["price"]["amount"] * item["amount"]
+        type = item["price"]["type"]
+        coins[type] += amount
+
+    return getPersonCashInGold(coins)
 
 ##################### O09 #####################
 
