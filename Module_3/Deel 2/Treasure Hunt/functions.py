@@ -99,7 +99,8 @@ def getItemsValueInGold(items:list) -> float:
     for item in items:
         amount = item["price"]["amount"] * item["amount"]
         type = item["price"]["type"]
-        coins[type] += amount
+        if type in coins:
+            coins[type] += amount
     return getPersonCashInGold(coins)
 
 ##################### O09 #####################
