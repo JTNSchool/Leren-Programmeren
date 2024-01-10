@@ -47,7 +47,7 @@ def RaadGetal():
         Rondes += 1
         NieuweRonde()
     elif (getal < RandomGetal):
-        print("Hoger", Rondes)
+        print("Hoger")
         if verschil <= 20:
             print("Heel warm")
         elif verschil <= 50:
