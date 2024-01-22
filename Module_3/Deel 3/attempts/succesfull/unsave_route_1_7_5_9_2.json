@@ -1,0 +1,95 @@
+{
+    "roomorder": "1,7,5,8,3,6,9,4,2,10",
+    "start": "17-01-2024 13:33:23",
+    "end": "17-01-2024 13:42:41",
+    "data": {
+        "player": {
+            "noice": 1,
+            "pickups": [
+                "shield"
+            ]
+        },
+        "route": {
+            "routetaken": [
+                "step A : 1",
+                "step B : 7",
+                "step C : 5",
+                "step D : 9",
+                "step E : 2"
+            ],
+            "doorcode": "",
+            "errors": [],
+            "roomanswers": [
+                "room1 : b",
+                "room7 : b",
+                "room5 : b",
+                "room9 : a",
+                "room2 : x"
+            ]
+        },
+        "story": {
+            "fullstory": [
+                "Je herinnert je alleen nog de val door een diep gat, na een zware aardbeving.",
+                "Versuft sta je op.",
+                "Je ziet links van je een deur en rechts van je een gang met aan het einde een standbeeld.",
+                "Je stapt de gang binnen en opnieuw begint de grond te schudden.",
+                "Je rent zo hard als je kunt door de lange gang richting het standbeeld terwijl de gang achter je instort.",
+                "Zodra je bij het einde van de gang komt en bij het standbeeld staat, stopt de grond met schudden.",
+                "Je kijkt achterom en ziet de gang volledig ingestort.",
+                "Voor je staat een standbeeld, met in zijn handen een schild.",
+                "Je pakt het schild van het standbeeld, het voelt licht en handzaam.",
+                "Nu je nog eens goed om je heen kijkt, zie je dat de gang links steeds breder wordt en de gang rechts smaller.",
+                "Je stapt een grote hal gevuld met rijen kolossale pilaren.",
+                "Het schamele licht van flikkerende fakkels voorspelt niets goeds.",
+                "Een muffe vochtige geur hangt in de lucht, vermengd met een vage geur van bedorven voedsel.",
+                "Tussen de pilaren zie je een grote schim bewegen.",
+                "Je stapt voorzichtig verder de ruimte in.",
+                "Plots schrik je op van een hard gegrom achter je.",
+                "Je kijkt om en achter je staat een enorme trol die zijn knuppel naar achterwaarts beweegt om je te slaan.",
+                "Je bukt net op tijd en een van de pilaren krijgt het voor zijn kiezen.",
+                "Een groot brokstuk vliegt de hal door en maakt een gat in de muur.",
+                "De pilaar stort in op het hoofd van de trol, die alleen maar bozer wordt.",
+                "Even neem je de tijd om om je heen te kijken en zie je 2 opties.",
+                "Een gang verderop of door het zojuist ontstane gat.",
+                "Je staat op en trekt een sprintje naar het gat.",
+                "Plots sta je voor een houte loopbrug met de trol op je hielen.",
+                "Je probeert voorzichtig te doen maar je enige optie is nu om door te lopen.",
+                "Dan herinner je het schild dat je zojuist hebt opgepakt.",
+                "Je houd je schild voor je terwijl de trol op je af komt rennen.",
+                "Hij heeft telaat door dat jij en de verdediging zit en struikelt over je.",
+                "De impact van de trol brengt je uit balans en samen vallen jullie naar beneden.",
+                "Hij aan de rechterkant van de brug en jij aan de linkerkant.",
+                "Het wordt donker voor je ogen.",
+                "Versuft word je wakker op de grond.",
+                "Je kijkt om je heen en ziet dat de trol bewusteloos vast zit in een deuropening.",
+                "Je kijkt omhoog.",
+                "Helaas is er geen weg terug.",
+                "Dus je begint de kamer te onderzoeken.",
+                "Aan 1 van de muren vindt je een kleine opening in de muur met een hendel er naast.",
+                "De hendel staat in de middelste positie en vraagt er om bewogen te worden.",
+                "Je duwt de hendel naar boven en je hoort wat gepiep en gekraak.",
+                "Je kijkt omhoog en vanuit het donker komt langzaam een trap naar beneden.",
+                "De trap land met 1 kant op de grond en gaat naar boven aan de andere kant.",
+                "Aan de constructie kun je zien dat dit een brug geweest moet zijn.",
+                "Je loopt door het hek en het valt achter dicht.",
+                "Voor een kolosale ijzeren deur zie je een wezen van onmetelijke kracht en grandeur: Een Draak...",
+                "De draak ligt rustig te slapen, zijn machtige flanken rijzen gelijkmatig op en neer met zijn ademhaling.",
+                "Je ziet een sleutel om zijn nek zitten, die zal wel voor die grote ijzeren deur zijn.",
+                "Voorzichtig sluip je richting het beest en rijkt naar de sleutel.",
+                "Het schild, dat op je rug vast zat, valt op de grond en de draak die zo vredig lag te slapen opend zijn ogen.",
+                "Met een vloeiende beweging slokt de draak je in 1 keer op.",
+                "Je bent omgekomen in kamer 2."
+            ],
+            "choices": [
+                "Neem je A) de deur links of B) de gang rechts? : b",
+                "Wil je het schild meenemen? (Y/N) : y",
+                "Neem je de gang A) links of B) rechts? : b",
+                "Wat doe je? A) Rennen of B) Bukken? : b",
+                "Wat doe je? A) Naar de gang of B) Door het gat? : b",
+                "Wat doe je? A) toch de brug over of B) Verdedigen? : b",
+                "Welke kant duw je de hendel op? A) Omhoog | B) Naar beneden? : a"
+            ],
+            "errors": []
+        }
+    }
+}

@@ -244,7 +244,7 @@ treasure = [{
     'unit' : '',
     'price' : {
         'amount' : 9,
-        'type' : 'siver'
+        'type' : 'silver'
     }
 },{
     'name' : 'Armbanden',

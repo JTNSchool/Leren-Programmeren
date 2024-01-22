@@ -99,8 +99,8 @@ def getItemsValueInGold(items:list) -> float:
     for item in items:
         amount = item["price"]["amount"] * item["amount"]
         type = item["price"]["type"]
-        if type in coins:
-            coins[type] += amount
+        #if type in coins:
+        coins[type] += amount
     return getPersonCashInGold(coins)
 
 ##################### O09 #####################
@@ -116,44 +116,28 @@ def getCashInGoldFromPeople(people:list) -> float:
 def getInterestingInvestors(investors:list) -> list:
     Intrested = []
     for investor in investors:
-        if investor["profitReturn"] <= 10:
+        if investor["profitReturn"] < 10:
             Intrested.append(investor)
     return Intrested
 
 def getAdventuringInvestors(investors:list) -> list:
-    Intrested = []
-    for investor in investors:
-        if investor["adventuring"] == True:
-            Intrested.append(investor)
-    return Intrested
+    return getFromListByKeyIs(getInterestingInvestors(investors), "adventuring", True)
 
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
-    Cost = {
-        'platinum' : 0,
-        'gold' : 0,
-        'silver' : 0,
-        'copper' : 0
-    }
+    GoldCost = 0
 
-    #Aantal investors
-    invenstorcount = 0
-    for invenstor in investors:
-        if invenstor['profitReturn'] <= 10 and invenstor['adventuring']:
-            invenstorcount += 1
+    if gear  == []:
+        return float(GoldCost)
+    investors = getAdventuringInvestors(getInterestingInvestors(investors))
+    invenstorcount = len(investors)
 
-    #Food
-    Cost['gold'] += getJourneyFoodCostsInGold(invenstorcount, invenstorcount)
+    GoldCost += getJourneyFoodCostsInGold(invenstorcount, invenstorcount)
 
-    #Gear
-    for item in gear:
-        amount = item["price"]["amount"] * item["amount"]
-        type = item["price"]["type"]
-        Cost[type] += amount * invenstorcount
+    GoldCost += getItemsValueInGold(gear * invenstorcount)
 
-    #paard en tent
-    Cost['gold'] += getTotalRentalCost(invenstorcount, invenstorcount)
+    GoldCost += getTotalRentalCost(invenstorcount, invenstorcount)
 
-    return getPersonCashInGold(Cost)
+    return GoldCost
 
 ##################### O11 #####################
 
@@ -174,15 +158,59 @@ def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
 ##################### O13 #####################
 
 def getInvestorsCuts(profitGold:float, investors:list) -> list:
-    pass
+    profits = []
+    for person in investors:
+        if person['profitReturn'] < 10:
+            Profit = round(profitGold / 100 * person['profitReturn'], 2)
+            profits.append(Profit)
+    return profits
+
 
 def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> float:
-    pass
+    LeftOver = profitGold
+    for cut in investorsCuts:
+       LeftOver -= cut
+    ret = LeftOver / fellowship
+    if ret < 0:
+        ret = 0.0
+    return round(ret,2)
 
-##################### O14 #####################
+
+#####  ################ O14 #####################
 
 def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:list) -> list:
-    pass
+    people = [mainCharacter] + friends + investors
+    earnings = []
+
+    # haal de juiste inhoud op
+    adventuringFriends = getAdventuringFriends(friends)
+    interestingInvestors = getInterestingInvestors(investors)
+    adventuringInvestors = getAdventuringInvestors(investors)
+    investorsCuts = getInvestorsCuts(profitGold, investors)
+    party = [mainCharacter] + adventuringFriends + adventuringInvestors
+    goldCut = getAdventurerCut(profitGold, investorsCuts, len(party))
+
+    # verdeel de uitkomsten
+    for person in people:
+        personCash = getPersonCashInGold(person['cash'])
+                                         
+
+        if person == mainCharacter:
+            goldCut = GoldPerFriend + (Num * AmountFriends)
+        elif person in adventuringFriends:
+            goldCut = GoldPerFriend - Num
+        elif person in interestingInvestors:
+            goldCut = investorsCuts[0]
+            investorsCuts.pop(0)
+
+        earnings.append({
+            'name'   : person['name'],
+            'start'  : personCash,
+            'end'    : getPersonCashInGold(person['cash']) + goldCut
+        })
+    print(earnings)
+
+    return earnings
 
 ##################### view functions #####################
 
