@@ -1,6 +1,6 @@
 import game
 #bybbb
-ROOMORDER = ('1', '7', '4', '5', '8', '3', '9', '2', '6', '10')
+ROOMORDER = ('1', '7', '4', '5', '8', '3', '9', '6', '2', '10')
 
 story = game.story(ROOMORDER)
 
