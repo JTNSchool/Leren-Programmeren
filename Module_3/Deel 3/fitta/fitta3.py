@@ -38,15 +38,14 @@ print('-----------------------------------------------')
 
 print(f'''
 * {Egg} {str_single_plural(Egg, TXT_EGGS)} 
-* {str_amount_fraction(Milk)} {str_units(Milk, TXT_CUPS)} {str_single_plural(Milk, TXT_MILK)} 
-* {str_amount_fraction(Salt)} {str_units(Salt,TXT_TEASPOONS)} {str_single_plural(Salt, TXT_SALT)} 
-* {str_amount_fraction(Pepper)} {str_units(Pepper,TXT_TEASPOONS)} {str_single_plural(Pepper, TXT_PEPPER)} 
-* {str_amount_fraction(Oil)} {str_units(Oil,TXT_SPOONS)} {str_single_plural(Oil, TXT_OIL)}  
+* {str_amount_fraction(Milk)} {str_units(Milk, TXT_CUPS)} {str_single_plural(Milk, TXT_MILK)} ({unit2ml(round_quarter(Milk), TXT_CUPS)} ml)
+* {str_amount_fraction(Salt)} {str_units(Salt,TXT_TEASPOONS)} {str_single_plural(Salt, TXT_SALT)} ({ml2gram(unit2ml(round_quarter(Salt), TXT_TEASPOONS), GRAM_PER_ML_SALT)} gram)
+* {str_amount_fraction(Pepper)} {str_units(Pepper,TXT_TEASPOONS)} {str_single_plural(Pepper, TXT_PEPPER)} ({ml2gram(unit2ml(round_quarter(Pepper), TXT_TEASPOONS), GRAM_PER_ML_PEPPER)} gram)
+* {str_amount_fraction(Oil)} {str_units(Oil,TXT_SPOONS)} {str_single_plural(Oil, TXT_OIL)} ({unit2ml(round_quarter(Oil), TXT_SPOONS)} ml)
 * {Onion} {str_single_plural(Onion, TXT_ONIONS)}
 * {Garlic} {str_single_plural(Garlic, TXT_GARLICS)}
 * {Paprika} {str_single_plural(Paprika, TXT_PAPRIKAS)}
-* {str_amount_fraction(Spinach)} {str_units(Spinach,TXT_CUPS)} {str_single_plural(Spinach, TXT_SPINACH)}
-* {str_amount_fraction(Cheese)} {str_units(Cheese,TXT_CUPS)} {str_single_plural(Cheese, TXT_CHEESE)}
+* {str_amount_fraction(Spinach)} {str_units(Spinach,TXT_CUPS)} {str_single_plural(Spinach, TXT_SPINACH)} ({ml2gram(unit2ml(round_quarter(Spinach), TXT_CUPS), GRAM_PER_ML_SPINACH)} gram)
+* {str_amount_fraction(Cheese)} {str_units(Cheese,TXT_CUPS)} {str_single_plural(Cheese, TXT_CHEESE)} ({ml2gram(unit2ml(round_quarter(Cheese), TXT_CUPS), GRAM_PER_ML_CHEESE)} gram)
 ''')
-
 print('-----------------------------------------------')
