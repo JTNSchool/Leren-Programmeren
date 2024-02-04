@@ -5,11 +5,6 @@ PRIJZEN = {
     "Large": 11.10,
 }
 
-#Check of er genoeg prijzen zijn in verglijking met soorten
-for soort in SOORTEN:
-    if soort not in PRIJZEN  or len(PRIJZEN) != len(SOORTEN):
-        exit("ERROR: DE SOORTEN EN PRIJZEN ZIJN NIET HET ZELFDE")
-
 def Input_Int(txt):
     while True:
         antwoord = input(txt + " ")
@@ -18,6 +13,12 @@ def Input_Int(txt):
             return antwoord
         except ValueError:
             print(f"{antwoord} is geen heel getal")
+
+
+#Check of er genoeg prijzen zijn in verglijking met soorten
+for soort in SOORTEN:
+    if soort not in PRIJZEN  or len(PRIJZEN) != len(SOORTEN):
+        exit("ERROR: DE SOORTEN EN PRIJZEN ZIJN NIET HET ZELFDE")
 
 #Aantal pizzas
 AantalPizzas = {}
