@@ -2,6 +2,7 @@ PRIJZEN = {
     "Small": 6.50,
     "Medium": 9.30,
     "Large": 11.10,
+    "TEST": 1999
 }
 
 def Input_Int(txt):

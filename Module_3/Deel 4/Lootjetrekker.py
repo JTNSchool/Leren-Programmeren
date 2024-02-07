@@ -1,4 +1,4 @@
-import random, time
+import random
 
 Lijst = {}
 Personen = []
@@ -11,9 +11,9 @@ def VraagDeelnemers():
             if AantalDeelnemers in range(3, 99999999999999):
                 return AantalDeelnemers
             else:
-                raise ValueError
+                print("Vul een getal in hoger dan 3")
         except ValueError:
-            print("Vul een getal in hoger dan 3")
+            print("Vul een getal in")
 
 def ShuffleAndGive():
     global Lijst, Personen
