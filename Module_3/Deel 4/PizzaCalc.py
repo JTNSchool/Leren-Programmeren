@@ -1,4 +1,3 @@
-SOORTEN = ["Small", "Medium", "Large"]
 PRIJZEN = {
     "Small": 6.50,
     "Medium": 9.30,
@@ -15,14 +14,9 @@ def Input_Int(txt):
             print(f"{antwoord} is geen heel getal")
 
 
-#Check of er genoeg prijzen zijn in verglijking met soorten
-for soort in SOORTEN:
-    if soort not in PRIJZEN  or len(PRIJZEN) != len(SOORTEN):
-        exit("ERROR: DE SOORTEN EN PRIJZEN ZIJN NIET HET ZELFDE")
-
 #Aantal pizzas
 AantalPizzas = {}
-for grote in SOORTEN:
+for grote in PRIJZEN:
     amount = Input_Int(f"Hoeveel {grote} pizza's wilt u?")
     if amount >= 1:
         AantalPizzas.update({grote: amount})
