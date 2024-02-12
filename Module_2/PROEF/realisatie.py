@@ -47,7 +47,12 @@ while Aantal > 0:
 
 Wrong = 0
 while True:
-    ShuffleAndGive()
+    Personen = [] + Namen
+    random.shuffle(Personen)
+    Lijst = {}
+    for naam in Namen:
+        Lijst.update({naam: Personen[0]})
+        Personen.pop(0)
     MaxScore = len(Lijst)
     Score = 0
     for Naam in Lijst:
