@@ -18,25 +18,25 @@ def Welcome():
     Info = {}
     AskBolletjesAmount(Info)
 
-def AskBolletjesAmount(Info):
+def AskBolletjesAmount(Info, ToppingKost=0):
     Amount = int(AskQuestion("Hoeveel bolletjes wilt u?", "integer"))
     if Amount <= 8:
         Info.update({"Amount": Amount})
-        HoorntjeOrBakje(Info)
+        HoorntjeOrBakje(Info, ToppingKost)
     else:
         print("Sorry, zulke grote bakken hebben we niet")
-        AskBolletjesAmount(Info)
+        AskBolletjesAmount(Info, ToppingKost)
 
-def HoorntjeOrBakje(Info):
+def HoorntjeOrBakje(Info, ToppingKost):
     if Info["Amount"] <= 3:
         BakOfHoorn = AskQuestion(f"Wilt u deze {Info['Amount']} bolletje(s) in een bakje of een hoorntje?", ["Bakje", "Hoorntje"])
         Info.update({"BakOfHoorn": BakOfHoorn})
     else:
         print(f"Dan krijgt u van mij een bakje met {Info['Amount']} bolletjes")
         Info.update({"BakOfHoorn": "Bakje"})
-    AskSmaak(Info)
+    AskSmaak(Info, ToppingKost)
 
-def AskSmaak(Info):
+def AskSmaak(Info, ToppingKost):
     Smaken = {
         "C": "Chocolade",
         "V": "Vanille",
@@ -62,10 +62,10 @@ def AskSmaak(Info):
             BolletjesDict[Smaak] += 1
         else:
             BolletjesDict.update({Smaak: 1})
-    AskTopping(Info, BolletjesDict)
+    AskTopping(Info, BolletjesDict, ToppingKost)
 
 
-def AskTopping(Info, BolletjesDict):
+def AskTopping(Info, BolletjesDict, ToppingKost):
     Toppings = {
         "A": {"Naam": "Geen", "Kost": 0},
         "B": {"Naam": "Slagroom", "Kost": 0.5},
@@ -78,7 +78,6 @@ def AskTopping(Info, BolletjesDict):
     Opties = ""
     ToppingsList = list(Toppings.keys())
     AllowedAwsners = []
-    ToppingKost = 0
 
     for i in Toppings:
         AllowedAwsners.append(i)
@@ -108,7 +107,7 @@ def GiveIcecream(Info, SmakenDict, ToppingKost):
     Info = {"Order": OldIcecreams + [CurrentIcecream]}
     MoreIcecream = AskQuestion("Wilt u nog meer bestellen?", ["Ja", "J", "Nee", "N"])
     if MoreIcecream in ["Ja", "J"]:
-        AskBolletjesAmount(Info)
+        AskBolletjesAmount(Info, ToppingKost)
     else:
         PrintReceipt(Info, ToppingKost)
     
@@ -139,8 +138,8 @@ def PrintReceipt(Info, ToppingKost):
     Lengte = 15
 
     print('----------["Papi Gelato"]----------')
-
     for item in TotaleStats:
+        
         if item != "Smaken":
             Ruimte = (Lengte- len(item)) * " "
             TotalePrijs += round(TotaleStats[item] * Prijzen[item], 2)
@@ -158,7 +157,6 @@ def PrintReceipt(Info, ToppingKost):
     print(f"{'-' * 34} +")  
     print(f"Totaal{' ' * 20}= €{round(TotalePrijs,2):.2f}")
     print("Bedankt en tot ziens!")
-    print(Info)
 
 
 

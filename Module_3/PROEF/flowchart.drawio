@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-02-29T14:25:51.947Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="bsrJqnyjdLPy0ZFhuqeV" version="22.0.3" type="device">
+<mxfile host="Electron" modified="2024-02-29T14:43:20.800Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="gF-MwYa1ocTiSZnXi3zM" version="22.0.3" type="device">
   <diagram name="Pagina-1" id="x_HgcXylL7boOuMKqr33">
-    <mxGraphModel dx="2328" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2245" dy="673" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -51,10 +51,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3opzVPZRNWy8DkOBu5dA-10" target="znIzttLq6tilm1fCVoMF-3">
+        <mxCell id="znIzttLq6tilm1fCVoMF-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3opzVPZRNWy8DkOBu5dA-10" target="znIzttLq6tilm1fCVoMF-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-7" value="als het een hoortje of bakje is" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-6">
+        <mxCell id="znIzttLq6tilm1fCVoMF-7" value="als het een hoortje of bakje is" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="znIzttLq6tilm1fCVoMF-6" vertex="1" connectable="0">
           <mxGeometry x="0.2853" y="3" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
@@ -62,7 +62,7 @@
         <mxCell id="3opzVPZRNWy8DkOBu5dA-10" value="Vraag voor hoorntje of bakje?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3opzVPZRNWy8DkOBu5dA-11" target="znIzttLq6tilm1fCVoMF-3">
+        <mxCell id="znIzttLq6tilm1fCVoMF-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3opzVPZRNWy8DkOBu5dA-11" target="znIzttLq6tilm1fCVoMF-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="70" y="590" />
@@ -113,7 +113,7 @@
         <mxCell id="3opzVPZRNWy8DkOBu5dA-27" value="bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3opzVPZRNWy8DkOBu5dA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="3opzVPZRNWy8DkOBu5dA-39" edge="1" source="3opzVPZRNWy8DkOBu5dA-31">
+        <mxCell id="3opzVPZRNWy8DkOBu5dA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3opzVPZRNWy8DkOBu5dA-31" target="3opzVPZRNWy8DkOBu5dA-39" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="280" y="660" as="targetPoint" />
             <mxPoint x="280" y="680" as="sourcePoint" />
@@ -188,29 +188,29 @@
         <mxCell id="3opzVPZRNWy8DkOBu5dA-31" value="geef het&amp;nbsp; aan klant" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="830" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-3" target="znIzttLq6tilm1fCVoMF-9">
+        <mxCell id="znIzttLq6tilm1fCVoMF-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="znIzttLq6tilm1fCVoMF-3" target="znIzttLq6tilm1fCVoMF-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-3" value="Vraag voor hoorntje of bakje?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="znIzttLq6tilm1fCVoMF-3" value="Vraag voor hoorntje of bakje?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="560" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-9" target="znIzttLq6tilm1fCVoMF-10">
+        <mxCell id="znIzttLq6tilm1fCVoMF-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="znIzttLq6tilm1fCVoMF-9" target="znIzttLq6tilm1fCVoMF-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-12" value="Geen goede smaak" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-11">
+        <mxCell id="znIzttLq6tilm1fCVoMF-12" value="Geen goede smaak" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="znIzttLq6tilm1fCVoMF-11" vertex="1" connectable="0">
           <mxGeometry x="-0.0484" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-9">
+        <mxCell id="znIzttLq6tilm1fCVoMF-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="znIzttLq6tilm1fCVoMF-9" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="279.99999999999955" y="750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-9" value="Vraag smaak voor aantal bolletjes" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="znIzttLq6tilm1fCVoMF-9" value="Vraag smaak voor aantal bolletjes" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="210" y="660" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-10" target="znIzttLq6tilm1fCVoMF-9">
+        <mxCell id="znIzttLq6tilm1fCVoMF-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="znIzttLq6tilm1fCVoMF-10" target="znIzttLq6tilm1fCVoMF-9" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="490" y="640" />
@@ -218,18 +218,23 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-10" value="bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVvY1ghO5QZpnJSQen9U-1" value="Hervraag" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-14">
+          <mxGeometry x="0.1667" y="-5" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-10" value="bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="660" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-15" target="znIzttLq6tilm1fCVoMF-16">
+        <mxCell id="znIzttLq6tilm1fCVoMF-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="znIzttLq6tilm1fCVoMF-15" target="znIzttLq6tilm1fCVoMF-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-20" value="Geen optie" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-17">
+        <mxCell id="znIzttLq6tilm1fCVoMF-20" value="Geen optie" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="znIzttLq6tilm1fCVoMF-17" vertex="1" connectable="0">
           <mxGeometry x="0.0431" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-15" target="3opzVPZRNWy8DkOBu5dA-31">
+        <mxCell id="znIzttLq6tilm1fCVoMF-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="znIzttLq6tilm1fCVoMF-15" target="3opzVPZRNWy8DkOBu5dA-31" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="390" y="780" />
@@ -237,18 +242,18 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-22" value="Goed antwoord" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-21">
+        <mxCell id="znIzttLq6tilm1fCVoMF-22" value="Goed antwoord" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="znIzttLq6tilm1fCVoMF-21" vertex="1" connectable="0">
           <mxGeometry x="-0.0773" y="3" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-15" value="Vraag topping&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="znIzttLq6tilm1fCVoMF-15" value="Vraag topping&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="750" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-16" value="bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="znIzttLq6tilm1fCVoMF-16" value="bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="750" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="znIzttLq6tilm1fCVoMF-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-16" target="znIzttLq6tilm1fCVoMF-15">
+        <mxCell id="znIzttLq6tilm1fCVoMF-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="znIzttLq6tilm1fCVoMF-16" target="znIzttLq6tilm1fCVoMF-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="120" y="730" />
