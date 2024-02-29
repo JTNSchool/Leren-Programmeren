@@ -1,4 +1,3 @@
-#Amount, BakOfHoorn
 def AskQuestion(Question, Options):
     while True:
         Awnser = input(Question + " ").capitalize()
@@ -13,7 +12,6 @@ def AskQuestion(Question, Options):
                 return Awnser
             else:
                 print("Sorry dat snap ik niet...")
-
 
 def Welcome():
     print("Welkom bij Papi Gelato")
@@ -48,7 +46,7 @@ def AskSmaak(Info):
     Opties = ""
     SmakenList = list(Smaken.keys())
     AllowedAwsners = []
-    IjsDict = {}
+    BolletjesDict = {}
 
     for i in Smaken:
         AllowedAwsners.append(i)
@@ -60,13 +58,45 @@ def AskSmaak(Info):
     for num in range(1, Info["Amount"]+1):
         Letter = AskQuestion(f"Welke smaak wilt u voor bolletje nummer {num}? {Opties}?", AllowedAwsners)
         Smaak = Smaken[Letter]
-        if Smaak in IjsDict:
-            IjsDict[Smaak] += 1
+        if Smaak in BolletjesDict:
+            BolletjesDict[Smaak] += 1
         else:
-            IjsDict.update({Smaak: 1})
-    GiveIcecream(Info, IjsDict)
+            BolletjesDict.update({Smaak: 1})
+    AskTopping(Info, BolletjesDict)
 
-def GiveIcecream(Info, SmakenDict):
+
+def AskTopping(Info, BolletjesDict):
+    Toppings = {
+        "A": {"Naam": "Geen", "Kost": 0},
+        "B": {"Naam": "Slagroom", "Kost": 0.5},
+        "C": {"Naam": "Sprinkels", "Kost": 0.3 * Info["Amount"]},
+        "D": {"Naam": "Caramel Saus", "Kost": 0.6} 
+    }
+    if Info["BakOfHoorn"] == "Bakje":
+        Toppings["D"]["Kost"] = 0.9
+
+    Opties = ""
+    ToppingsList = list(Toppings.keys())
+    AllowedAwsners = []
+    ToppingKost = 0
+
+    for i in Toppings:
+        AllowedAwsners.append(i)
+        if ToppingsList[len(Toppings)-1] == i:
+            Opties = Opties + f" {i}) {Toppings[i]['Naam']}"
+        else:
+            Opties = Opties + f" {i}) {Toppings[i]['Naam']},"
+    
+    Letter = AskQuestion(f"Wat voor topping wilt u op dit ijsje?: {Opties}?", AllowedAwsners)
+    ToppingNaam = Toppings[Letter]["Naam"]
+    ToppingKost += Toppings[Letter]["Kost"]
+
+
+    
+    GiveIcecream(Info, BolletjesDict, ToppingKost)
+
+
+def GiveIcecream(Info, SmakenDict, ToppingKost):
     print(f"Hier is uw {Info['BakOfHoorn']} met {Info['Amount']} bolletje(s).")
     #Save order in list
     if "Order" in Info:
@@ -80,9 +110,9 @@ def GiveIcecream(Info, SmakenDict):
     if MoreIcecream in ["Ja", "J"]:
         AskBolletjesAmount(Info)
     else:
-        PrintReceipt(Info)
+        PrintReceipt(Info, ToppingKost)
     
-def PrintReceipt(Info):
+def PrintReceipt(Info, ToppingKost):
     TotaleStats = {}
     Prijzen = {
         'Bolletjes': 1.10,
@@ -99,24 +129,34 @@ def PrintReceipt(Info):
                 else:
                     for i in order[item]:
                         if i in TotaleStats["Smaken"]:
-                           print(i, order[item] )
-                           TotaleStats["Smaken"][i] += order[item][i]
+                            print(i, order[item] )
+                            TotaleStats["Smaken"][i] += order[item][i]
             else:
-                TotaleStats.update({item: order[item]})
+                if item != "Bolletjes":
+                    TotaleStats.update({item: order[item]})
+
+    Bonnetje = []
+    Lengte = 15
 
     print('----------["Papi Gelato"]----------')
-    #length - item etc
+
     for item in TotaleStats:
         if item != "Smaken":
+            Ruimte = (Lengte- len(item)) * " "
             TotalePrijs += round(TotaleStats[item] * Prijzen[item], 2)
-            print(f" {item}    {TotaleStats[item]} x €{Prijzen[item]} = € {round(TotaleStats[item] * Prijzen[item], 2)}")
+            print(f" {item}{Ruimte}{TotaleStats[item]} x €{Prijzen[item]:.2f} = €{round(TotaleStats[item] * Prijzen[item], 2):.2f}")
         else:
             for smaak in TotaleStats[item]:
+                Ruimte = (Lengte- len(smaak)) * " "
                 TotalePrijs += round(TotaleStats[item][smaak] * Prijzen['Bolletjes'], 2)
-                print(f" {smaak}    {TotaleStats[item][smaak]} x €{Prijzen['Bolletjes']} = € {round(TotaleStats[item][smaak] * Prijzen['Bolletjes'], 2)}")
-    print(f"-------------------- +")
-    print(f"Totaal        = €{round(TotalePrijs,2)}")
-
+                print(f" {smaak}{Ruimte}{TotaleStats[item][smaak]} x €{Prijzen['Bolletjes']:.2f} = €{round(TotaleStats[item][smaak] * Prijzen['Bolletjes'], 2):.2f}")
+    if ToppingKost > 0:
+        TotalePrijs += ToppingKost
+        Ruimte = (25- len("Toppings")) * " "
+        print(f" Toppings{Ruimte}= €{round(ToppingKost,2):.2f}")
+        
+    print(f"{'-' * 34} +")  
+    print(f"Totaal{' ' * 20}= €{round(TotalePrijs,2):.2f}")
     print("Bedankt en tot ziens!")
     print(Info)
 

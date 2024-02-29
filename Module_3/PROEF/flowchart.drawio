@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-02-27T09:17:57.617Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="XMMMtRe4LobpD8Xvx1px" version="22.0.3" type="device">
+<mxfile host="Electron" modified="2024-02-29T14:25:51.947Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="bsrJqnyjdLPy0ZFhuqeV" version="22.0.3" type="device">
   <diagram name="Pagina-1" id="x_HgcXylL7boOuMKqr33">
-    <mxGraphModel dx="2103" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2328" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -51,21 +51,21 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3opzVPZRNWy8DkOBu5dA-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3opzVPZRNWy8DkOBu5dA-10" target="3opzVPZRNWy8DkOBu5dA-31" edge="1">
+        <mxCell id="znIzttLq6tilm1fCVoMF-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3opzVPZRNWy8DkOBu5dA-10" target="znIzttLq6tilm1fCVoMF-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3opzVPZRNWy8DkOBu5dA-33" value="als het een hoortje of bakje is" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="3opzVPZRNWy8DkOBu5dA-32" vertex="1" connectable="0">
-          <mxGeometry x="-0.112" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="znIzttLq6tilm1fCVoMF-7" value="als het een hoortje of bakje is" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-6">
+          <mxGeometry x="0.2853" y="3" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3opzVPZRNWy8DkOBu5dA-10" value="Vraag voor hoorntje of bakje?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3opzVPZRNWy8DkOBu5dA-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3opzVPZRNWy8DkOBu5dA-11" target="3opzVPZRNWy8DkOBu5dA-31" edge="1">
+        <mxCell id="znIzttLq6tilm1fCVoMF-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3opzVPZRNWy8DkOBu5dA-11" target="znIzttLq6tilm1fCVoMF-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="70" y="580" />
+              <mxPoint x="70" y="590" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -113,20 +113,17 @@
         <mxCell id="3opzVPZRNWy8DkOBu5dA-27" value="bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3opzVPZRNWy8DkOBu5dA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="3opzVPZRNWy8DkOBu5dA-39" edge="1">
+        <mxCell id="3opzVPZRNWy8DkOBu5dA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="3opzVPZRNWy8DkOBu5dA-39" edge="1" source="3opzVPZRNWy8DkOBu5dA-31">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="280" y="660" as="targetPoint" />
             <mxPoint x="280" y="680" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3opzVPZRNWy8DkOBu5dA-31" value="geef het&amp;nbsp; aan klant" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="220" y="550" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="3opzVPZRNWy8DkOBu5dA-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3opzVPZRNWy8DkOBu5dA-39" target="3opzVPZRNWy8DkOBu5dA-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="340" y="690" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="660" y="690" />
+              <mxPoint x="660" y="1043" />
               <mxPoint x="660" y="250" />
               <mxPoint x="170" y="250" />
             </Array>
@@ -154,39 +151,110 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="3opzVPZRNWy8DkOBu5dA-39" value="Vraag of klant meer wilt bestellen?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="220" y="780" width="120" height="60" as="geometry" />
+          <mxGeometry x="220" y="1013.1800000000001" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="yml2TsBebL-pL9bnMQK3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3opzVPZRNWy8DkOBu5dA-40" target="yml2TsBebL-pL9bnMQK3-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3opzVPZRNWy8DkOBu5dA-40" value="Bedank de klant&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="220" y="880" width="120" height="60" as="geometry" />
+          <mxGeometry x="220" y="1113.18" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3opzVPZRNWy8DkOBu5dA-43" value="STOP" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="220" y="1090" width="120" height="60" as="geometry" />
+          <mxGeometry x="220" y="1323.18" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3opzVPZRNWy8DkOBu5dA-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3opzVPZRNWy8DkOBu5dA-45" target="3opzVPZRNWy8DkOBu5dA-39" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="70" y="760" />
-              <mxPoint x="280" y="760" />
+              <mxPoint x="70" y="993.1800000000001" />
+              <mxPoint x="280" y="993.1800000000001" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="3opzVPZRNWy8DkOBu5dA-45" value="Bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="10" y="780" width="120" height="60" as="geometry" />
+          <mxGeometry x="10" y="1013.1800000000001" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="yml2TsBebL-pL9bnMQK3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yml2TsBebL-pL9bnMQK3-3" target="3opzVPZRNWy8DkOBu5dA-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="yml2TsBebL-pL9bnMQK3-3" value="loop door de dictionary met alle variable en print ze netjes&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="220" y="990" width="120" height="60" as="geometry" />
+          <mxGeometry x="220" y="1223.18" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CISoUFIvcjtsNSV2RbBZ-3" value="Voeg order toe aan totale orders" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="630" width="120" height="60" as="geometry" />
+        <mxCell id="CISoUFIvcjtsNSV2RbBZ-3" value="Voeg order toe aan totale orders" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="910" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CISoUFIvcjtsNSV2RbBZ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3opzVPZRNWy8DkOBu5dA-31" target="CISoUFIvcjtsNSV2RbBZ-3">
+        <mxCell id="CISoUFIvcjtsNSV2RbBZ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3opzVPZRNWy8DkOBu5dA-31" target="CISoUFIvcjtsNSV2RbBZ-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3opzVPZRNWy8DkOBu5dA-31" value="geef het&amp;nbsp; aan klant" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-3" target="znIzttLq6tilm1fCVoMF-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-3" value="Vraag voor hoorntje of bakje?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-9" target="znIzttLq6tilm1fCVoMF-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-12" value="Geen goede smaak" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-11">
+          <mxGeometry x="-0.0484" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="279.99999999999955" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-9" value="Vraag smaak voor aantal bolletjes" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-10" target="znIzttLq6tilm1fCVoMF-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="640" />
+              <mxPoint x="270" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-10" value="bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-15" target="znIzttLq6tilm1fCVoMF-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-20" value="Geen optie" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-17">
+          <mxGeometry x="0.0431" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-15" target="3opzVPZRNWy8DkOBu5dA-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="780" />
+              <mxPoint x="390" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-22" value="Goed antwoord" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="znIzttLq6tilm1fCVoMF-21">
+          <mxGeometry x="-0.0773" y="3" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-15" value="Vraag topping&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-16" value="bied excuses aan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="znIzttLq6tilm1fCVoMF-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="znIzttLq6tilm1fCVoMF-16" target="znIzttLq6tilm1fCVoMF-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="730" />
+              <mxPoint x="280" y="730" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
