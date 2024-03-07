@@ -2,14 +2,14 @@ from functies import *
 
 Welcome()
 while 0:  
-    Bolletjes = AskBolletjesAmount()
+    Bolletjes = VraagBolletjesAmount()
     BakOfHoorn = HoorntjeOrBakje(Bolletjes)
-    Smaken = AskSmaak(Bolletjes)
+    Smaken = VraagSmaak(Bolletjes)
 
     try:
-        Toppingkost = AskTopping(Bolletjes, BakOfHoorn, Toppingkost)
+        Toppingkost = VraagTopping(Bolletjes, BakOfHoorn, Toppingkost)
     except NameError:
-        Toppingkost = AskTopping(Bolletjes, BakOfHoorn)
+        Toppingkost = VraagTopping(Bolletjes, BakOfHoorn)
     
     try:
         Bestelling, MoreIcecream = GiveIcecream({"BakOfHoorn": BakOfHoorn, "Amount": Bolletjes}, Smaken, Bestelling)

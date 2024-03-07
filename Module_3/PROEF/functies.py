@@ -1,6 +1,6 @@
 import data
 
-def AskQuestion(Question, Options):
+def VraagQuestion(Question, Options):
     while True:
         Awnser = input(Question + " ").capitalize()
         if Options == "integer":
@@ -18,23 +18,23 @@ def AskQuestion(Question, Options):
 def Welcome():
     print("Welkom bij Papi Gelato")
 
-def AskBolletjesAmount():
-    Amount = int(AskQuestion("Hoeveel bolletjes wilt u?", "integer"))
+def VraagBolletjesAmount():
+    Amount = int(VraagQuestion("Hoeveel bolletjes wilt u?", "integer"))
     if Amount <= 8:
         return Amount
     else:
         print("Sorry, zulke grote bakken hebben we niet")
-        AskBolletjesAmount()
+        VraagBolletjesAmount()
 
 def HoorntjeOrBakje(bolletjes):
     if bolletjes <= 3:
-        BakOfHoorn = AskQuestion(f"Wilt u deze {bolletjes} bolletje(s) in een bakje of een hoorntje?", ["Bakje", "Hoorntje"])
+        BakOfHoorn = VraagQuestion(f"Wilt u deze {bolletjes} bolletje(s) in een bakje of een hoorntje?", ["Bakje", "Hoorntje"])
     else:
         print(f"Dan krijgt u van mij een bakje met {bolletjes} bolletjes")
         BakOfHoorn = "Bakje"
     return BakOfHoorn
 
-def AskSmaak(bolletjes):
+def VraagSmaak(bolletjes):
     Smaken = data.Smaken
     Opties = ""
     SmakenList = list(Smaken.keys())
@@ -49,7 +49,7 @@ def AskSmaak(bolletjes):
             Opties = Opties + f" {i}) {Smaken[i]},"
     
     for num in range(1, bolletjes+1):
-        Letter = AskQuestion(f"Welke smaak wilt u voor bolletje nummer {num}? {Opties}?", AllowedAwsners)
+        Letter = VraagQuestion(f"Welke smaak wilt u voor bolletje nummer {num}? {Opties}?", AllowedAwsners)
         Smaak = Smaken[Letter]
         if Smaak in BolletjesDict:
             BolletjesDict[Smaak] += 1
@@ -57,7 +57,7 @@ def AskSmaak(bolletjes):
             BolletjesDict.update({Smaak: 1})
     return BolletjesDict
 
-def AskTopping(bolletjes, BakOfHoorn, ToppingKost=0):
+def VraagTopping(bolletjes, BakOfHoorn, ToppingKost=0):
     Toppings = data.Toppings
     Toppings["C"]["Kost"] *= 0.3 * bolletjes
     if BakOfHoorn == "Bakje":
@@ -74,7 +74,7 @@ def AskTopping(bolletjes, BakOfHoorn, ToppingKost=0):
         else:
             Opties = Opties + f" {i}) {Toppings[i]['Naam']},"
     
-    Letter = AskQuestion(f"Wat voor topping wilt u op dit ijsje?: {Opties}?", AllowedAwsners)
+    Letter = VraagQuestion(f"Wat voor topping wilt u op dit ijsje?: {Opties}?", AllowedAwsners)
     ToppingKost += Toppings[Letter]["Kost"]
 
     return ToppingKost
@@ -89,7 +89,7 @@ def GiveIcecream(Info, SmakenDict, Bestelling=0):
     
     CurrentIcecream = {'Bolletjes': Info['Amount'], Info["BakOfHoorn"]: 1, "Smaken": SmakenDict}
     Bestelling = OldIcecreams + [CurrentIcecream]
-    MoreIcecream = AskQuestion("Wilt u nog meer bestellen?", data.JaNeeOptie)
+    MoreIcecream = VraagQuestion("Wilt u nog meer bestellen?", data.JaNeeOptie)
     
     return Bestelling, MoreIcecream
     
