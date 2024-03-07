@@ -1,3 +1,5 @@
+import data
+
 def AskQuestion(Question, Options):
     while True:
         Awnser = input(Question + " ").capitalize()
@@ -15,34 +17,25 @@ def AskQuestion(Question, Options):
 
 def Welcome():
     print("Welkom bij Papi Gelato")
-    Info = {}
-    AskBolletjesAmount(Info)
 
-def AskBolletjesAmount(Info, ToppingKost=0):
+def AskBolletjesAmount():
     Amount = int(AskQuestion("Hoeveel bolletjes wilt u?", "integer"))
     if Amount <= 8:
-        Info.update({"Amount": Amount})
-        HoorntjeOrBakje(Info, ToppingKost)
+        return Amount
     else:
         print("Sorry, zulke grote bakken hebben we niet")
-        AskBolletjesAmount(Info, ToppingKost)
+        AskBolletjesAmount()
 
-def HoorntjeOrBakje(Info, ToppingKost):
-    if Info["Amount"] <= 3:
-        BakOfHoorn = AskQuestion(f"Wilt u deze {Info['Amount']} bolletje(s) in een bakje of een hoorntje?", ["Bakje", "Hoorntje"])
-        Info.update({"BakOfHoorn": BakOfHoorn})
+def HoorntjeOrBakje(bolletjes):
+    if bolletjes <= 3:
+        BakOfHoorn = AskQuestion(f"Wilt u deze {bolletjes} bolletje(s) in een bakje of een hoorntje?", ["Bakje", "Hoorntje"])
     else:
-        print(f"Dan krijgt u van mij een bakje met {Info['Amount']} bolletjes")
-        Info.update({"BakOfHoorn": "Bakje"})
-    AskSmaak(Info, ToppingKost)
+        print(f"Dan krijgt u van mij een bakje met {bolletjes} bolletjes")
+        BakOfHoorn = "Bakje"
+    return BakOfHoorn
 
-def AskSmaak(Info, ToppingKost):
-    Smaken = {
-        "C": "Chocolade",
-        "V": "Vanille",
-        "A": "Aardbei",
-        "M": "Munt", 
-    }
+def AskSmaak(bolletjes):
+    Smaken = data.Smaken
     Opties = ""
     SmakenList = list(Smaken.keys())
     AllowedAwsners = []
@@ -55,24 +48,19 @@ def AskSmaak(Info, ToppingKost):
         else:
             Opties = Opties + f" {i}) {Smaken[i]},"
     
-    for num in range(1, Info["Amount"]+1):
+    for num in range(1, bolletjes+1):
         Letter = AskQuestion(f"Welke smaak wilt u voor bolletje nummer {num}? {Opties}?", AllowedAwsners)
         Smaak = Smaken[Letter]
         if Smaak in BolletjesDict:
             BolletjesDict[Smaak] += 1
         else:
             BolletjesDict.update({Smaak: 1})
-    AskTopping(Info, BolletjesDict, ToppingKost)
+    return BolletjesDict
 
-
-def AskTopping(Info, BolletjesDict, ToppingKost):
-    Toppings = {
-        "A": {"Naam": "Geen", "Kost": 0},
-        "B": {"Naam": "Slagroom", "Kost": 0.5},
-        "C": {"Naam": "Sprinkels", "Kost": 0.3 * Info["Amount"]},
-        "D": {"Naam": "Caramel Saus", "Kost": 0.6} 
-    }
-    if Info["BakOfHoorn"] == "Bakje":
+def AskTopping(bolletjes, BakOfHoorn, ToppingKost=0):
+    Toppings = data.Toppings
+    Toppings["C"]["Kost"] *= 0.3 * bolletjes
+    if BakOfHoorn == "Bakje":
         Toppings["D"]["Kost"] = 0.9
 
     Opties = ""
@@ -87,40 +75,29 @@ def AskTopping(Info, BolletjesDict, ToppingKost):
             Opties = Opties + f" {i}) {Toppings[i]['Naam']},"
     
     Letter = AskQuestion(f"Wat voor topping wilt u op dit ijsje?: {Opties}?", AllowedAwsners)
-    ToppingNaam = Toppings[Letter]["Naam"]
     ToppingKost += Toppings[Letter]["Kost"]
 
+    return ToppingKost
 
-    
-    GiveIcecream(Info, BolletjesDict, ToppingKost)
-
-
-def GiveIcecream(Info, SmakenDict, ToppingKost):
+def GiveIcecream(Info, SmakenDict, Bestelling=0):
     print(f"Hier is uw {Info['BakOfHoorn']} met {Info['Amount']} bolletje(s).")
     #Save order in list
-    if "Order" in Info:
-        OldIcecreams = Info["Order"] 
+    if Bestelling != 0:
+        OldIcecreams = Bestelling
     else:
         OldIcecreams = []
     
     CurrentIcecream = {'Bolletjes': Info['Amount'], Info["BakOfHoorn"]: 1, "Smaken": SmakenDict}
-    Info = {"Order": OldIcecreams + [CurrentIcecream]}
-    MoreIcecream = AskQuestion("Wilt u nog meer bestellen?", ["Ja", "J", "Nee", "N"])
-    if MoreIcecream in ["Ja", "J"]:
-        AskBolletjesAmount(Info, ToppingKost)
-    else:
-        PrintReceipt(Info, ToppingKost)
+    Bestelling = OldIcecreams + [CurrentIcecream]
+    MoreIcecream = AskQuestion("Wilt u nog meer bestellen?", data.JaNeeOptie)
     
-def PrintReceipt(Info, ToppingKost):
+    return Bestelling, MoreIcecream
+    
+def PrintReceipt(Bestelling, ToppingKost):
     TotaleStats = {}
-    Prijzen = {
-        'Bolletjes': 1.10,
-        "Hoorntje": 1.25,
-        "Bakje": 0.75
-    }
+    Prijzen = data.Prijzen
     TotalePrijs = 0
-    #1 Big Dict
-    for order in Info["Order"]:
+    for order in Bestelling:
         for item in order:
             if item in TotaleStats:
                 if item != "Smaken":
@@ -128,13 +105,13 @@ def PrintReceipt(Info, ToppingKost):
                 else:
                     for i in order[item]:
                         if i in TotaleStats["Smaken"]:
-                            print(i, order[item] )
                             TotaleStats["Smaken"][i] += order[item][i]
+                        else:
+                            TotaleStats["Smaken"][i] = order[item][i]
             else:
                 if item != "Bolletjes":
                     TotaleStats.update({item: order[item]})
 
-    Bonnetje = []
     Lengte = 15
 
     print('----------["Papi Gelato"]----------')
@@ -157,8 +134,3 @@ def PrintReceipt(Info, ToppingKost):
     print(f"{'-' * 34} +")  
     print(f"Totaal{' ' * 20}= €{round(TotalePrijs,2):.2f}")
     print("Bedankt en tot ziens!")
-
-
-
-#----------------------------------------
-Welcome()
