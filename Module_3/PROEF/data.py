@@ -6,7 +6,7 @@ Smaken = {
     "C": "Chocolade",
     "V": "Vanille",
     "A": "Aardbei",
-    "M": "Munt", 
+    "M": "Munt"
 }
 
 Toppings = {

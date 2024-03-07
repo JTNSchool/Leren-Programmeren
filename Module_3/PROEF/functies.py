@@ -15,22 +15,22 @@ def VraagVraag(Question, Options):
             else:
                 print("Sorry dat snap ik niet...")
 
-def Welcome():
+def Welkom():
     print("Welkom bij Papi Gelato")
 
 def VraagBolletjesAantal():
-    Aantal = int(VraagVraag("Hoeveel bolletjes wilt u?", "integer"))
-    if Aantal <= 8:
-        return Aantal
-    else:
-        print("Sorry, zulke grote bakken hebben we niet")
-        VraagBolletjesAantal()
+    while True:
+        Aantal = int(VraagVraag("Hoeveel bolletjes wilt u?", "integer"))
+        if Aantal <= 8 and Aantal >= 1:
+            return Aantal
+        else:
+            print("Sorry, zulke grote bakken hebben we niet")
 
-def HoorntjeOrBakje(bolletjes):
-    if bolletjes <= 3:
-        BakOfHoorn = VraagVraag(f"Wilt u deze {bolletjes} bolletje(s) in een bakje of een hoorntje?", ["Bakje", "Hoorntje"])
+def HoorntjeOrBakje(Bolletjes):
+    if Bolletjes <= 3:
+        BakOfHoorn = VraagVraag(f"Wilt u deze {Bolletjes} bolletje(s) in een bakje of een hoorntje?", ["Bakje", "Hoorntje"])
     else:
-        print(f"Dan krijgt u van mij een bakje met {bolletjes} bolletjes")
+        print(f"Dan krijgt u van mij een bakje met {Bolletjes} bolletjes")
         BakOfHoorn = "Bakje"
     return BakOfHoorn
 
@@ -59,7 +59,7 @@ def VraagSmaak(bolletjes):
 
 def VraagTopping(bolletjes, BakOfHoorn, ToppingKost=0):
     Toppings = data.Toppings
-    Toppings["C"]["Kost"] *= 0.3 * bolletjes
+    Toppings["C"]["Kost"] = 0.3 * bolletjes
     if BakOfHoorn == "Bakje":
         Toppings["D"]["Kost"] = 0.9
 
@@ -79,7 +79,7 @@ def VraagTopping(bolletjes, BakOfHoorn, ToppingKost=0):
 
     return ToppingKost
 
-def GiveIcecream(Info, SmakenDict, Bestelling=0):
+def GeefIjsje(Info, SmakenDict, Bestelling=0):
     print(f"Hier is uw {Info['BakOfHoorn']} met {Info['Aantal']} bolletje(s).")
     #Save order in list
     if Bestelling != 0:
@@ -93,7 +93,7 @@ def GiveIcecream(Info, SmakenDict, Bestelling=0):
     
     return Bestelling, MeerIjs
     
-def PrintReceipt(Bestelling, ToppingKost):
+def ToonBonnetje(Bestelling, ToppingKost):
     TotaleStatastieken = {}
     Prijzen = data.Prijzen
     TotalePrijs = 0
@@ -115,6 +115,7 @@ def PrintReceipt(Bestelling, ToppingKost):
     Lengte = 15
 
     print('----------["Papi Gelato"]----------')
+    print(TotaleStatastieken)
     for item in TotaleStatastieken:
         
         if item != "Smaken":
