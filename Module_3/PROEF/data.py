@@ -2,6 +2,8 @@ jaOptie = ["Ja", "J"]
 NeeOptie = ["Nee", "N"]
 JaNeeOptie = jaOptie + NeeOptie
 
+BTW = 6
+
 Smaken = {
     "C": "Chocolade",
     "V": "Vanille",

@@ -182,5 +182,6 @@ def ToonBonnetje(TotaleStatastieken, ToppingKost, TypeKlant):
     print(f"{'-' * 34} +")  
     print(f"Totaal{' ' * 20}= €{round(TotalePrijs,2):.2f}")
     if TypeKlant == "Zakelijk":
-        print(f"BTW (9%){' ' * 18}= €{round(TotalePrijs/109*9,2):.2f}")
+        procent = 100 + data.BTW
+        print(f"BTW ({data.BTW}%){' ' * 18}= €{round(TotalePrijs/procent*data.BTW,2):.2f}")
     print("Bedankt en tot ziens!")
