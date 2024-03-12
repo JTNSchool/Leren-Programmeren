@@ -19,7 +19,7 @@ Toppings = {
 }
 
 Prijzen = {
-    'Bolletjes': 1.10,
+    'Bolletjes': 0.95,
     "Hoorntje": 1.25,
     "Bakje": 0.75,
     "Liter": 9.80
