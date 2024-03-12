@@ -8,12 +8,12 @@ def VraagVraag(Question, Options):
                 Awnser = int(Awnser)
                 return Awnser
             except ValueError:
-                print("Sorry dat snap ik niet...")
+                print("Sorry dat is geen optie die we aanbieden...")
         else:
             if Awnser in Options:
                 return Awnser
             else:
-                print("Sorry dat snap ik niet...")
+                print("Sorry dat is geen optie die we aanbieden...")
 
 #Vraag of de klant een Particulier is of Zakelijk
 def ParticulierOfZakelijk() -> str:
