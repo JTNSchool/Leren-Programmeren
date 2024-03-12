@@ -7,8 +7,7 @@ BTW = 6
 Smaken = {
     "C": "Chocolade",
     "V": "Vanille",
-    "A": "Aardbei",
-    "M": "Munt"
+    "A": "Aardbei"
 }
 
 Toppings = {
