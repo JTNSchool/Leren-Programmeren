@@ -2,13 +2,14 @@ from functies import *
 
 print("Welkom bij Papi Gelato")
 TypeKlant = ParticulierOfZakelijk()
+
 while True: 
     Bolletjes = VraagBolletjesAantal(TypeKlant)
     BakOfHoorn = HoorntjeOrBakje(Bolletjes, TypeKlant)
     Smaken = VraagSmaak(Bolletjes, TypeKlant)
 
     try:
-        Toppingkost = VraagTopping(Bolletjes, BakOfHoorn, Toppingkost, TypeKlant)
+        Toppingkost = VraagTopping(Bolletjes, BakOfHoorn, TypeKlant, Toppingkost)
     except NameError:
         Toppingkost = VraagTopping(Bolletjes, BakOfHoorn, TypeKlant)
 

@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-03-12T10:02:28.015Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="7L9V2CmuLdAEdkHNgTUj" version="22.0.3" type="device">
+<mxfile host="Electron" modified="2024-03-12T10:28:13.363Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="dYZnnHFTPNHb1L-NR0_R" version="22.0.3" type="device">
   <diagram name="Pagina-1" id="x_HgcXylL7boOuMKqr33">
-    <mxGraphModel dx="3379" dy="2381" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2040" dy="1745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -281,7 +281,7 @@
         <mxCell id="A2c0aRYnY08Me6oTFpzh-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="A2c0aRYnY08Me6oTFpzh-65" target="A2c0aRYnY08Me6oTFpzh-76">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A2c0aRYnY08Me6oTFpzh-62" value="Later dan 1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A2c0aRYnY08Me6oTFpzh-61">
+        <mxCell id="A2c0aRYnY08Me6oTFpzh-62" value="Lager dan 1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A2c0aRYnY08Me6oTFpzh-61">
           <mxGeometry x="0.2889" y="-2" relative="1" as="geometry">
             <mxPoint x="-8" y="-2" as="offset" />
           </mxGeometry>
