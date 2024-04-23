@@ -1,4 +1,4 @@
-getal = "1111111111111"
+getal = "1"
 
 for i in range(10):
     Streak = 0

@@ -73,11 +73,13 @@ testarg_friends_test4_5_8 = [{
         'copper' : 0
     }
 }]
-expected = [
-    {'name': 'TestChar1', 'start': 0.0, 'end': 70.0}, 
-    {'name': 'TestFriend1', 'start': 20.0, 'end': 60.0}, 
-    {'name': 'TestFriend2', 'start': 15.0, 'end': 55.0}
-]
+
+expected = [{'name': 'TestChar1', 'start': 0.0, 'end': 55.62},
+            {'name': 'TestFriend1', 'start': 20.0, 'end': 45.62},
+            {'name': 'TestFriend2', 'start': 15.0, 'end': 40.62},
+            {'name': 'TestInvestor1', 'start': 125.0, 'end': 168.12}
+            ]
+
 result = getEarnigs(150, testarg_mainCharacter_test1_4_5_6, testarg_friends_test4_5_8, testarg_investors_test3_5_6)
 test('getEarnigs - test 4',expected, result)
 
@@ -119,7 +121,7 @@ expected = [
     {'name': 'TestFriend1', 'start': 20.0, 'end': 20.0}, 
     {'name': 'TestFriend2', 'start': 15.0, 'end': 15.0}, 
     {'name': 'TestInvestor1', 'start': 125.0, 'end': 387.5}
-]
+] #660
 result = getEarnigs(500, testarg_mainCharacter_test1_4_5_6, testarg_friends_test6_7, testarg_investors_test3_5_6)
 test('getEarnigs - test 6',expected, result)
 
@@ -164,6 +166,7 @@ expected = [
     {'name': 'TestInvestor2', 'start': 125.0, 'end': 150.0}, 
     {'name': 'TestInvestor3', 'start': 100.0, 'end': 100.0}
 ]
+
 result = getEarnigs(500, testarg_mainCharacter_test2_3_7_8, testarg_friends_test6_7, testarg_investors_test7)
 test('getEarnigs - test 7',expected, result)
 

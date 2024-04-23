@@ -158,12 +158,12 @@ def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
 ##################### O13 #####################
 
 def getInvestorsCuts(profitGold:float, investors:list) -> list:
-    profits = []
-    for person in investors:
-        if person['profitReturn'] < 10:
-            Profit = round(profitGold / 100 * person['profitReturn'], 2)
-            profits.append(Profit)
-    return profits
+    investors_cut = []
+    investors = (getInterestingInvestors(investors))
+    one_percent_of_gold = float(profitGold / 100)
+    for investor in investors:
+        investors_cut.append(round(one_percent_of_gold * investor['profitReturn'], 2))
+    return investors_cut
 
 
 def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> float:
@@ -181,35 +181,36 @@ def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> fl
 def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:list) -> list:
     people = [mainCharacter] + friends + investors
     earnings = []
-
-    # haal de juiste inhoud op
+    print(profitGold)
     adventuringFriends = getAdventuringFriends(friends)
     interestingInvestors = getInterestingInvestors(investors)
-    adventuringInvestors = getAdventuringInvestors(investors)
+    adventuringInvestors = getAdventuringInvestors(interestingInvestors)
     investorsCuts = getInvestorsCuts(profitGold, investors)
-    party = [mainCharacter] + adventuringFriends + adventuringInvestors
-    goldCut = getAdventurerCut(profitGold, investorsCuts, len(party))
+    print(investorsCuts)
+    goldCut = getAdventurerCut(profitGold, investorsCuts, len(people))
 
-    # verdeel de uitkomsten
     for person in people:
-        personCash = getPersonCashInGold(person['cash'])
-                                         
-
-        if person == mainCharacter:
-            goldCut = GoldPerFriend + (Num * AmountFriends)
-        elif person in adventuringFriends:
-            goldCut = GoldPerFriend - Num
+        if person in adventuringInvestors:
+            reward = ((profitGold / 100) * person['profitReturn']) + getPersonCashInGold(person['cash']) + goldCut
+            profitGold -= reward
         elif person in interestingInvestors:
-            goldCut = investorsCuts[0]
-            investorsCuts.pop(0)
+            reward = ((profitGold / 100) * person['profitReturn']) + getPersonCashInGold(person['cash'])
+            profitGold -= reward
+
+    for person in people:
+        if person in [mainCharacter]:
+            reward = goldCut + getPersonCashInGold(person['cash']) + 10 * len(friends)
+
+        elif person in adventuringFriends:
+            reward = goldCut + getPersonCashInGold(person['cash']) - 10
+
+        
 
         earnings.append({
-            'name'   : person['name'],
-            'start'  : personCash,
-            'end'    : getPersonCashInGold(person['cash']) + goldCut
-        })
-    print(earnings)
-
+                'name'   : person['name'],
+                'start'  : getPersonCashInGold(person['cash']),
+                'end'    : reward
+            })
     return earnings
 
 ##################### view functions #####################
