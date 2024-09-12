@@ -6,3 +6,4 @@ def CreateNumber(i, list):
 for i in range(20):
     lijst.append(CreateNumber(i, lijst))
     print(lijst)
+    
